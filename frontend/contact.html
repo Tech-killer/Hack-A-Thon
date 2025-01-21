@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Helpline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2f1;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #03a9f4;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width */
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav-links a.active {
+            font-weight: bold;
+        }
+
+        /* Ensuring content is visible below the navbar */
+        .content {
+            padding: 20px;
+            text-align: center;
+            margin-top: 80px; /* Adds space for the fixed navbar */
+        }
+        .content h2 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Cards Styling */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 280px;
+            box-sizing: border-box;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #03a9f4;
+            font-size: 18px;
+        }
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* Cards Container */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Responsive Layout for smaller screens */
+        @media (max-width: 768px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                display: none; /* Hide the links on small screens */
+            }
+            .logo {
+                font-size: 20px;
+            }
+            .sign-in a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SHE SAFE</div>
+        <div class="nav-links">
+            <a href="/frontend/index.html" class="active">Home</a>
+            <a href="/frontend/about.html">About</a>
+            <a href="/frontend/Report.html">Report</a>
+            <a href="/frontend/contact.html">Contact us</a>
+        </div>
+        <button class="sign-in"><a href="/frontend/dashboard.html">SOS</a></button>
+    </nav>
+
+    <div class="content">
+        <h2>Emergency Contacts</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>National Commission for Women Helpline</h3>
+                <p>Phone: 7827170170</p>
+                <p>Email: nationalwomenhelpline@example.com</p>
+                <p>Venue: Various locations across India</p>
+            </div>
+            <div class="card">
+                <h3>Central Social Welfare Board - Police Helpline</h3>
+                <p>Phone: 1091</p>
+                <p>Email: shelter@example.com</p>
+                <p>Venue: 123 Safe Place, City Name</p>
+            </div>
+            <div class="card">
+                <h3>Women Helpline</h3>
+                <p>Phone: 1291</p>
+                <p>Email: legalaid@example.com</p>
+                <p>Venue: 456 Justice Lane, City Name</p>
+            </div>
+            <div class="card">
+                <h3>Shakti Shalini - Women's Shelter</h3>
+                <p>Phone: (011) 24373736</p>
+                <p>Email: counseling@example.com</p>
+                <p>Venue: 789 Support Road, City Name</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
